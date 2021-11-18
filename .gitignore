@@ -30,3 +30,6 @@ override.tf.json
 
 # temporary notes
 *._sh
+
+# access and secret keys
+credentials
