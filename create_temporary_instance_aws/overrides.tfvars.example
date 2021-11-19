@@ -4,7 +4,9 @@ instance_type = "t2.micro"
 instance_tags = {
     Name = "test-server"
 }
+
 vpc_cidr_block = "10.0.0.0/24"
+
 vpc_tags = {
     Name = "virtual network for test server"
 }

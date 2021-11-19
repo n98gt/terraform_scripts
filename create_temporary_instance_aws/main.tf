@@ -46,7 +46,6 @@ resource "aws_internet_gateway" "gateway_for_test-server" {
   tags = var.gateway_tags
 
 }
-
 data "aws_eip" "existing_eip" {
   tags = {
     Name = var.existing_elastic_ip_name
