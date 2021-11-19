@@ -33,3 +33,6 @@ override.tf.json
 
 # access and secret keys
 credentials
+
+# variables values
+overrides.tfvars
