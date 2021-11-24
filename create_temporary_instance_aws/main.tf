@@ -128,11 +128,3 @@ resource "aws_security_group" "security-group_for_test-server" {
     ipv6_cidr_blocks = ["::/0"]
   }
 }
-
-output "test-server_public_ip" {
-  value = aws_instance.test-server.public_ip
-}
-
-output "test-server_private_ip" {
-  value = aws_instance.test-server.private_ip
-}
