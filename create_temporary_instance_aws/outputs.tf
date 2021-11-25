@@ -1,5 +1,6 @@
 output "test-server_public_ip" {
-  value = aws_instance.test-server.public_ip
+  value       = aws_instance.test-server.public_ip
+  description = "IP for ssh connection"
 }
 
 output "test-server_private_ip" {
