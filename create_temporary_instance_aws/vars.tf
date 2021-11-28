@@ -75,3 +75,9 @@ variable "route_table_tags" {
     Name = "route_table for test server"
   }
 }
+
+
+variable "existing_elastic_ip_name" {
+  type    = string
+  default = "elastic-ip-for-test-server"
+}
