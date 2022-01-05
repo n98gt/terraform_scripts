@@ -36,3 +36,6 @@ credentials
 
 # variables values
 overrides.auto.tfvars
+
+# remote state settings
+*.tfbackend
