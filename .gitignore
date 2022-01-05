@@ -35,4 +35,4 @@ override.tf.json
 credentials
 
 # variables values
-overrides.tfvars
+overrides.auto.tfvars
