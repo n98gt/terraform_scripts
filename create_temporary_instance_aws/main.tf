@@ -12,7 +12,7 @@ provider "aws" {
 resource "aws_instance" "test-server" {
   ami           = var.image_name
   instance_type = var.instance_type
-  key_name      = "ec2-ssh-key"
+  key_name      = var.ssh_key_name
 
   network_interface {
     device_index         = 0
