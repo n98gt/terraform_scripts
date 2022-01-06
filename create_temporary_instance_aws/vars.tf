@@ -80,3 +80,7 @@ variable "existing_elastic_ip_name" {
   type    = string
   default = "elastic-ip-for-test-server"
 }
+
+variable "ssh_config_path" {
+  type = string
+}

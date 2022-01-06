@@ -23,3 +23,4 @@ route_table_tags = {
 }
 
 ssh_key_name = "ec2-ssh-key"
+ssh_config_path = "~/.ssh/config_for_aws_test"

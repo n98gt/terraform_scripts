@@ -128,3 +128,12 @@ resource "aws_security_group" "security-group_for_test-server" {
     ipv6_cidr_blocks = ["::/0"]
   }
 }
+
+resource "null_resource" "generate_ssh_config" {
+  triggers = {
+    server_public_ip = aws_instance.test-server.public_ip
+  }
+  provisioner "local-exec" {
+    command = "bash generate_ssh_config_with_public_ip.sh ${aws_instance.test-server.public_ip} ${var.ssh_config_path}"
+  }
+}
