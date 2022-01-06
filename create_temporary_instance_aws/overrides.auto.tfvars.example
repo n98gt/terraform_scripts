@@ -22,6 +22,4 @@ route_table_tags = {
     Name = "route_table for test server"
 }
 
-existing_elastic_ip_name = "elastic-ip-for-test-server"
-
 ssh_key_name = "ec2-ssh-key"

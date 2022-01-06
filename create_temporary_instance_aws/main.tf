@@ -46,16 +46,6 @@ resource "aws_internet_gateway" "gateway_for_test-server" {
   tags = var.gateway_tags
 
 }
-data "aws_eip" "existing_eip" {
-  tags = {
-    Name = var.existing_elastic_ip_name
-  }
-}
-
-resource "aws_eip_association" "eip_assoc" {
-  instance_id   = aws_instance.test-server.id
-  allocation_id = data.aws_eip.existing_eip.id
-}
 
 resource "aws_route_table" "route-table_for_test-server" {
   vpc_id = aws_vpc.vpc_for_test-server.id
