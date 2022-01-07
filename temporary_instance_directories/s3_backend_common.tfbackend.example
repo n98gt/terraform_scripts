@@ -1,0 +1,8 @@
+bucket                  = ""
+region                  = "eu-north-1"
+dynamodb_table          = ""
+profile                 = ""
+
+# Ex.:
+# cd backend_for_state
+# terraform init -backend-config=./../s3_backend_common.tfbackend -backend-config=s3_backend_path.tfbackend
