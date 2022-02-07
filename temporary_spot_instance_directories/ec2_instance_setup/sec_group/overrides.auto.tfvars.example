@@ -1,0 +1,6 @@
+s3_backend_aws_region = "eu-north-1"
+s3_backend_profile = ""
+s3_backend_bucket_name = ""
+s3_backend_vpc_tfstate_path = "path/to/vpc/terraform.tfstate"
+
+aws_region = "us-east-2" # us-east-2 Ohio

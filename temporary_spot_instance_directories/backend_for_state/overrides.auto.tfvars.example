@@ -1,0 +1,4 @@
+dynamodb_table_name = ""
+aws_region = "eu-north-1" # eu-north-1 Stockholm
+s3_bucket_name = ""
+aws_profile_for_s3_backend = ""

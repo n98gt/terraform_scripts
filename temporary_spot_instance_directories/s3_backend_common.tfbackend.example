@@ -1,0 +1,11 @@
+bucket                  = ""
+region                  = "eu-north-1" # eu-north-1 Stockholm
+dynamodb_table          = ""
+profile                 = ""
+
+# Ex.:
+# cd backend_for_state
+# terraform init -backend-config=./../s3_backend_common.tfbackend -backend-config=s3_backend_path.tfbackend
+# cd ec2_instance_setup/vpc && terraform init -backend-config=./../../s3_backend_common.tfbackend -backend-config=s3_backend_path.tfbackend
+# cd ec2_instance_setup/sec_group && terraform init -backend-config=./../../s3_backend_common.tfbackend -backend-config=s3_backend_path.tfbackend
+# cd ec2_instance_setup/ec2 && terraform init -backend-config=./../../s3_backend_common.tfbackend -backend-config=s3_backend_path.tfbackend

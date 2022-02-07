@@ -1,0 +1,17 @@
+s3_backend_aws_region = "eu-north-1" # eu-north-1 Stockhohm
+s3_backend_profile = ""
+s3_backend_bucket_name = ""
+s3_backend_vpc_tfstate_path = "path/to/vpc/terraform.tfstate"  # same value in s3_backend_path.tfbackend «key»
+s3_backend_security_group_tfstate_path = "path/to/security_group/terraform.tfstate"  # same value in s3_backend_path.tfbackend «key»
+
+image_name = "ami-0fb653ca2d3203ac1"   # 0fb653ca2d3203ac1 Ubuntu 20.04
+aws_region = "us-east-2" # us-east-2 Ohio
+instance_type = "t2.micro"
+spot_price="0.016"
+instance_tags = {
+    Name = "test-server"
+}
+ssh_key_name = "ec2-ssh-key"
+ssh_public_key = "ssh-rsa AAAA…  email@example.com"
+ssh_config_path = "~/.ssh/config_for_aws_test"
+ssh_private_key_path = "~/.ssh/…"
