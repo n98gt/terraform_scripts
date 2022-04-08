@@ -14,3 +14,5 @@ ssh_key_name = "ec2-ssh-key"
 ssh_public_key = "ssh-rsa AAAA…  email@example.com"
 ssh_config_path = "~/.ssh/config_for_aws_test"
 ssh_private_key_path = "~/.ssh/…"
+volume_size = 10
+volume_type = "gp2"

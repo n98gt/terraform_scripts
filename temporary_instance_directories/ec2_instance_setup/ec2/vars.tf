@@ -63,3 +63,11 @@ variable "ssh_config_path" {
 variable "ssh_private_key_path" {
   type = string
 }
+
+variable "volume_size" {
+  type = number
+}
+
+variable "volume_type"  {
+  type = string
+}

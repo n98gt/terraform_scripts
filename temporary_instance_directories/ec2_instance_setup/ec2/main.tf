@@ -53,6 +53,13 @@ resource "aws_instance" "test-server" {
     network_interface_id = aws_network_interface.network-interface_for_test-server.id
   }
 
+   root_block_device {
+    volume_size = var.volume_size # in GB <<----- I increased this!
+    volume_type = var.volume_type
+    # encrypted   = true
+    # kms_key_id  = data.aws_kms_key.customer_master_key.arn
+  }
+
   tags = var.instance_tags
 }
 
