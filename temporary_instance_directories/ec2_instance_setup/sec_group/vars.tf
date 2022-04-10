@@ -1,6 +1,5 @@
 variable "aws_region" {
   type    = string
-  default = "us-east-2" # us-east-2 Ohio
 }
 
 variable "s3_backend_aws_region" {
